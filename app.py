@@ -10,11 +10,14 @@ Steamlit app for Online Games Sales
 
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib
+import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly
 import plotly.express as px
 import statsmodels
 
+import scipy
 from scipy import stats
 
 import streamlit as st
@@ -123,7 +126,7 @@ def main():
     page = st.sidebar.selectbox("Go to", ["Games Overview", "Games by Year",  "Platform Analysis",  "Sales Analysis", 
                                           "Market Share by Region", "Review and Rating Analysis", "Hypothesis Test",
                                           "Models"], index=None) # "Genre Analysis", "Year-over-Year Growth",
-
+    
      # Customize the sidebar
     markdown = """
     Web App URL: <>
