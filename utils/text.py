@@ -3,7 +3,7 @@ Text file with description and summary.
 """
 
 ##################
-app_description = """This project explores sales data of online video games across various regions, including North America, Europe, and Japan. The data contains information on sales, platform, genres, ESRB ratings, critics and user scores providing insights into what factors contribute to a game’s success."""
+app_description = """This project explores sales data of online video games across various regions, including North America, Europe, and Japan. The data contains information on sales, platform, genres, ESRB ratings, critics and user scores providing insights into what factors contribute to a game’s success, including statistical hypothesis tests and examples of predictive models."""
 
 
 ##################
