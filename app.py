@@ -10,7 +10,7 @@ Steamlit app for Online Games Sales
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import statsmodels
@@ -117,6 +117,7 @@ def main():
     data = load_data()
     filtered_data = data[data['year_of_release']>=2013]
 
+
     # Navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.selectbox("Go to", ["Games Overview", "Games by Year",  "Platform Analysis",  "Sales Analysis", 
@@ -156,7 +157,7 @@ def main():
     elif page == "Games by Year":
         st.header("Games Released by Year")
         # Plot the data
-        fig, ax = plt.subplots()
+        # fig, ax = plt.subplots()
         fig = px.bar(data['year_of_release'].value_counts().reset_index(),
                      x='year_of_release', y='count',
                      color_discrete_sequence=['skyblue'],
