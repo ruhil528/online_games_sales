@@ -129,7 +129,7 @@ def main():
     
      # Customize the sidebar
     markdown = """
-    Web App URL: <>
+    Web App URL: <https://video-games-sales-analysis.streamlit.app/>
     GitHub Repository: <https://github.com/ruhil528/online_games_sales>
     """
     st.sidebar.title("About")
